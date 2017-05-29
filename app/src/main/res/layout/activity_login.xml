@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground3"
+    >
+
+    <EditText
+        android:layout_marginTop="240dp"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="이메일"
+        android:id="@+id/edit_email"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:id="@+id/edit_pass"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:text="로그인"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginBtn"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/joinBtn"
+            android:background="@drawable/button"
+            android:layout_marginRight="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:id="@+id/faceLoginBtn"
+            android:text="페이스북으로 로그인"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="#425fad"/>
+
+<!--        <com.kakao.usermgmt.LoginButton
+            android:id="@+id/kakaologinBtn"
+            android:layout_height="45dp"
+            android:layout_width="260dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>-->
+
+       <!-- <Button
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/kakaologinBtn"
+            android:text="카카오톡으로 로그인"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold"
+            android:background="#ead514"/>-->
+
+        <FrameLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp">
+            <com.kakao.usermgmt.LoginButton
+                android:id="@+id/kakaologinBtn"
+                android:layout_height="40dp"
+                android:layout_width="260dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="카카오톡으로 로그인"
+                android:id="@+id/kakaoText"
+                android:gravity="center"
+                android:textColor="@color/textColorPrimary"
+                android:textStyle="bold"
+                android:background="#ffea00"
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

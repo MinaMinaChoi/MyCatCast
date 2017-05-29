@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/house"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_feedlist"
+            android:icon="@drawable/heart"
+            android:title="구독목록" />
+        <item
+            android:id="@+id/nav_playlist"
+            android:icon="@drawable/playlist"
+            android:title="재생목록" />
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/settings"
+                android:title="설정" />
+        </menu>
+    </item>
+
+</menu>

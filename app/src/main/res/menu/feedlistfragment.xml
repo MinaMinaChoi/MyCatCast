@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/del_feedlist"
+        android:icon="@drawable/ic_action_remove"
+        android:title="구독목록모두지우기" />
+</menu>

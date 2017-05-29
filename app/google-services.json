@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "873894684193",
+    "firebase_url": "https://podcastfcm-7eeab.firebaseio.com",
+    "project_id": "podcastfcm-7eeab",
+    "storage_bucket": "podcastfcm-7eeab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873894684193:android:5668606660df2083",
+        "android_client_info": {
+          "package_name": "com.example.cmina.mycastcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873894684193-tnmd7inv79plpu3qo1gk0nqiv0aisrnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt7Ig9s4iimos1A4bADfxDA0X1v1RG3n4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

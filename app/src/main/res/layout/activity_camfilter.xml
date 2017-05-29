@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/gray"
+            android:text="그레이"
+            android:background="@drawable/button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+        <Button
+            android:text="엣찌"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/edge"
+            android:background="@drawable/button"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="블러"
+            android:id="@+id/blur"
+            android:background="@drawable/button"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/blue"
+            android:text="공포"
+            android:background="@drawable/button"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.cmina.mycastcast.util.CameraView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cameraView"
+
+            opencv:show_fps="false"
+            opencv:camera_id="any"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textWhite"
+            android:textSize="16dp"
+            android:text="화면을 터치하면 촬영됩니다"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+           />
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="podcast Title"
+        android:id="@+id/casttitle"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="18sp"/>
+
+    <ImageView
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:id="@+id/castImage"
+        android:layout_below="@+id/casttitle"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30px"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구독하기"
+        android:id="@+id/feedBtn"
+        android:layout_below="@+id/castImage" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        android:layout_below="@+id/feedBtn"
+        android:dividerHeight="1.5dp"
+        android:visibility="gone"
+        android:longClickable="true">
+
+    </ListView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerInParent="true"
+        android:visibility="visible"/>
+
+</RelativeLayout>
